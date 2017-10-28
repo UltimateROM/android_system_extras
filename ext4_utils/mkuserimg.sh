@@ -110,12 +110,12 @@ if [ -z $SIZE ]; then
 fi
 
 OPT=""
-if [ -n "$FC" ]; then
-  OPT="$OPT -S $FC"
-fi
-if [ -n "$FS_CONFIG" ]; then
-  OPT="$OPT -C $FS_CONFIG"
-fi
+#if [ -n "$FC" ]; then
+#  OPT="$OPT -S $FC"
+#fi
+#if [ -n "$FS_CONFIG" ]; then
+#  OPT="$OPT -C $FS_CONFIG"
+#fi
 if [ -n "$BLOCK_LIST" ]; then
   OPT="$OPT -B $BLOCK_LIST"
 fi
