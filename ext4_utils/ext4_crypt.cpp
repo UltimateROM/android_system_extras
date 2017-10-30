@@ -22,7 +22,7 @@
 #include <unistd.h>
 
 #include <fcntl.h>
-#include <asm/ioctl.h>
+#include <sys/ioctl.h>
 #include <sys/syscall.h>
 #include <sys/stat.h>
 #include <sys/types.h>
