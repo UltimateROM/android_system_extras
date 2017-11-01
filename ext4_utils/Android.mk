@@ -140,6 +140,7 @@ endif
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(libext4_utils_src_files)
 LOCAL_MODULE := libext4_utils_host
+LOCAL_C_INCLUDES := system/core/base/include system/core/debuggerd/test
 # Various instances of dereferencing a type-punned pointer in extent.c
 LOCAL_CFLAGS += -fno-strict-aliasing
 LOCAL_STATIC_LIBRARIES := \
