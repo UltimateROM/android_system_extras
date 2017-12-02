@@ -189,18 +189,6 @@ int main(int argc, char **argv)
 		}
 	}
 
-#if !defined(HOST)
-	// Use only if -S option not requested
-	if (!sehnd && mountpoint) {
-		sehnd = selinux_android_file_context_handle();
-
-		if (!sehnd) {
-			perror(optarg);
-			exit(EXIT_FAILURE);
-		}
-	}
-#endif
-
 	if (fs_config_file) {
 		if (load_canned_fs_config(fs_config_file) < 0) {
 			fprintf(stderr, "failed to load %s\n", fs_config_file);
